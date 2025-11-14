@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+☕ Get Me a Coffee — Creator Funding Platform (Next.js + Razorpay)
 
-## Getting Started
+A modern creator funding platform built with Next.js, allowing supporters to fund creators through Razorpay. Includes full authentication (GitHub, Google, Twitter), creator dashboards, supporter messages, and integrated MongoDB database.
 
-First, run the development server:
+✨ Features
+🔐 Authentication
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Login / Signup using GitHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Login with Google
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Login with Twitter
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Secured with NextAuth.js
 
-## Learn More
+💳 Payments (Razorpay)
 
-To learn more about Next.js, take a look at the following resources:
+One-time payments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Prefilled user data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Auto-updates database after successful payment
 
-## Deploy on Vercel
+Stores:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Supporter name
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Message
+
+Payment amount
+
+Order ID
+
+🗄 Backend (MongoDB + Mongoose)
+
+User model
+
+Payment model
+
+Safe database actions using Server Actions
+
+Lean queries + optimized MongoDB connection
+
+🖥 Pages Included
+
+Login Page
+
+Dashboard (Creator Dashboard)
+
+Payment Page (Supporter → Creator)
+
+User Public Page (username-based URL)
+
+About Page
+
+Profile Page (edit cover, profile, Razorpay keys, username)
+
+Leaderboard of Supporters
+
+🎨 UI / UX
+
+Built with Tailwind CSS
+
+Responsive modern UI
+
+Clean layouts inspired by Patreon & BuyMeACoffee
+
+🛠️ Tech Stack
+Frontend
+
+Next.js 14+ (App Router)
+
+React
+
+Tailwind CSS
+
+Backend
+
+MongoDB
+
+Mongoose
+
+Next.js Server Actions
+
+Razorpay SDK
+
+Authentication
+
+NextAuth.js
+
+GitHub Provider
+
+Google Provider
+
+Twitter Provider
