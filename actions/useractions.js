@@ -63,8 +63,7 @@ export const updateProfile = async (data, oldusername) => {
 
     else
     {
-
+        // email shouldn't be changed
+        await User.updateOne({email: ndata.email}, ndata)
     }
-    // email shouldn't be changed
-    await User.updateOne({email: ndata.email}, ndata)
 }

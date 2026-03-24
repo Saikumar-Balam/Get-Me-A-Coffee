@@ -16,10 +16,10 @@ export default function Home() {
         </p>
         <div>
           <Link href={'/login'}>
-          <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
+            <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
           </Link>
           <Link href={'/about'}>
-          <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
+            <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
           </Link>
         </div>
       </div>
@@ -56,8 +56,16 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-14">Learn more about us</h2>
         {/* Responsive youtube embed */}
         <div className="w-[90%] h-[40vh] md:[w-50%] md:h-[40vh] lg:w-[50%] lg:h-[40vh] xl:w-[50%] xl:h-[40vh]">
-       <iframe className="w-full h-fit"  src="https://www.youtube.com/embed/fx_nCYQUzqo?si=6xOPDepGsDWihoKr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       </div>
+          {/* <iframe className="w-full h-fit"  src="https://www.youtube.com/embed/FpjzY0_FVPc?si=S2KN0vL7mOQASaRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+         <video
+  className="w-full rounded-lg"
+  controls
+  muted
+  loop
+>
+  <source src="/Demo_Video.mp4" type="video/mp4" />
+</video>
+        </div>
       </div>
     </>
 
